@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body, html{
+    font-family: "Source Sans 3", sans-serif;
+    overflow-x: hidden;
+}
+
+p{
+    font-family: "Source Sans 3", sans-serif;
+    color: var(--main-text-color);
+    font-size: 20px;
+}
+
+h1{
+    font-family: "Libre Baskerville", serif;
+    color: var(--main-text-color);
+    font-size: 64px;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-btn-color);
+    display: inline-block;
+}
+
+
+:root{
+    --headline-text-color: #db944b;
+    --main-text-color: #fbf5ed;
+    --primary-btn-color: #d8442a;
+    --focused-btn-color: #d05000;
+    --text-btn-color: #281807;
+    --body-bg-color: #181516;
+}
+
+/* header section */
+
+.header-section{
+    background: url(../images/sk-CK6tjAIMJWM-unsplash.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+}
+
+.overlay{
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+
+ul li a{
+    color: var(--headline-text-color) !important;
+    padding-inline: 10px !important;
+    font-size: 18px;
+    transition: all .2s ease-out !important;
+}
+
+ul li a:hover{
+    color: var(--primary-btn-color) !important;
+    letter-spacing: 0.4px;
+}
+
+.metapos-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    /* background-color: var(--text-btn-color); */
+    transition: all 0.4s linear;
+}
+
+.text-logo-first{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    box-shadow: 0px 0px 3px var(--headline-text-color), 0px 0px 3px var(--headline-text-color);
+}
+
+
+.text-logo-last{
+    font-size: 22px;
+
+}
+
+.metapos-logo:hover{
+    transform: rotate(360deg)
+}
+
+.social-media-icon{
+    padding: 15px;
+}
+
+
+.social-media-icon a{
+    padding-inline: 4px;
+}
+
+.social-media-icon i{
+    background-color: var(--headline-text-color);
+    color: var(--text-btn-color);
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    padding-top: 2px;
+    transition: all 0.2s linear;
+    box-shadow: 0px 0px 4px var(--headline-text-color), 0px 0px 4px var(--headline-text-color) inset;
+}
+
+.social-media-icon i:hover{
+    background-color: var(--body-bg-color);
+    color: var(--main-text-color);
+    transform: rotate(360deg) translateY(-6px);
+}
+
+.banner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateY(-50%,);
+}
+
+.primary-btn{
+    background-color: var(--headline-text-color);
+    padding: 6px 50px;
+    color: var(--text-btn-color);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.2s ease-out;
+    margin-top: 20px;
+}
+
+.secondry-btn{
+    display: flex;
+    align-items: center;
+    background-color: var(--headline-text-color);
+    padding: 6px 50px;
+    color: var(--text-btn-color);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease-out;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.primary-btn:hover{
+    background-color: #743d02;
+    box-shadow: 0px 2px 3px #743d02, 
+    0px 4px 5px var(--headline-text-color) inset, 
+    0px -4px 5px #743d02 inset;
+}
+
+.secondry-btn:hover{
+    background-color: #743d02;
+    box-shadow: 0px 2px 3px #743d02,
+     0px 4px 5px var(--headline-text-color) inset, 
+     0px -4px 5px #743d02 inset;
+}
+
+/* about us */
+
+.about-us{
+    background-color: var(--body-bg-color);
+    padding-block: 90px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-bg-circle-img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    right: -166px;
+    top: -136px;
+}
+
+.about-heading{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-p{
+    font-size: 15px;
+    padding-block: 10px;
+}
+
+.about-btn{
+    color: var(--main-text-color);
+    text-decoration: underline;
+    margin-top: 15px;
+    transition: all 0.3s linear;
+}
+
+.about-btn:hover{
+    color: var(--headline-text-color);
+    letter-spacing: 2px;
+}
+
+/* .about-img{
+    background: rgba(0, 0, 0, 0.4) url(../images/city-4298285_1920.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+
+
+/* feature section */
+
+.feature-section{
+    background-color: var(--body-bg-color);
+    padding-block: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.feature-bg-circle-img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    left: -200px;
+    top: -142px;
+}
+
+.feature-heading{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.feature-items{
+    text-align: center;
+    padding-block: 10px;
+}
+
+.feature-icon{
+    color: var(--body-bg-color);
+    margin-bottom: 18px;
+    font-size: 28px;
+    background-color: var(--headline-text-color);
+    border-radius: 50px;
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .4s linear;
+}
+
+.feature-icon:hover{
+    transform: rotate(360deg);
+}
+
+.feature-blod-p{
+    color: var(--main-text-color);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.feature-p{
+    color: var(--main-text-color);
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+/* menu section */
+
+.menu-section{
+    background-color: var(--body-bg-color);
+    padding-block: 50px;
+}
+
+.menu-heading{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    font-size: 50px;
+}
+
+.exploremenu-btn{
+    background-color: var(--body-bg-color);
+    color: var(--headline-text-color);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 55px;
+    border: 0.3px solid var(--headline-text-color);
+    border-radius: 6px;
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    transition: .3s ease-out;
+    width: 100%;
+    text-align: center;
+}
+
+.exploremenu-btn:hover{
+    background-color: var(--text-btn-color);
+    color: var(--focused-btn-color);
+    box-shadow: 0px 2px 3px #743d02,
+     0px 2px 2px var(--headline-text-color) inset;
+}
+
+.menu-p{
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.menu-img{
+    width: 400px;
+    height: 355px;
+    object-fit: cover;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+}
+
+.menu-img:hover{
+    transform: scale(1.05);
+
+}
+
+.img-container{
+    overflow: hidden;
+    cursor: pointer;
+    height: 457px;
+}
+
+.img-container img{
+    height: 100%;
+    transition: all .3s linear;
+}
+
+.img-container:hover img{
+    transform: scale(1.1);
+}
+
+/* catering-section */
+
+.catering-section{
+    background-color: var(--body-bg-color);
+    padding-block: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.catering-bg-circle-img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    right: -178px;
+    top: 124px;
+}
+
+.catering-img{
+    width: 500px;
+    max-height: 480px;
+    object-fit: cover;
+    border-bottom: 5px solid var(--headline-text-color);
+    transition: all 0.2s linear;
+}
+
+
+.catering-p-bold{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--main-text-color);
+    margin-bottom: 0px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.catering-p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--main-text-color);
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.catering-img-sm{
+    width: 500px;
+    height: auto;
+}
+
+/* gallery section */
+
+.gallery-section{
+    background-color: var(--body-bg-color);
+    padding-block: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.gallery-bg-circle-img{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    left: -260px;
+    top: -115px;
+}
+
+
+.gallery-btn{
+    text-decoration: underline;
+    color: var(--headline-text-color);
+    margin-top: 22px;
+}
+
+.gallery-middle-img{
+    max-width: 636px;
+    object-fit: cover;
+}
+
+.gallery-img{
+    min-width: 200px;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+
+/* testimonial section */
+
+.testimonial-section{
+    background-color: var(--body-bg-color);
+    padding-block: 50px;
+}
+
+.testimonial-heading{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+.testimonial-img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.testimonial-client-img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50px;
+}
+
+.testimonial-disc span{
+    margin-left: 4px;
+    color: var(--headline-text-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.testimonial-disc i{
+    color: var(--headline-text-color);
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.testimonial-disc p{
+    color: var(--main-text-color);
+    font-size: 15px;
+    margin-top: 18px;
+}
+
+.testimonial{
+    border-right: 1px solid var(--headline-text-color);
+}
+
+
+/* contact section */
+
+.contact-section{
+    background-color: var(--body-bg-color);
+    padding-block: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-bg-circle-img{
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    right: -90px;
+    top: -200px;
+}
+
+.contact-heading{
+    font-family: "Libre Baskerville", serif;
+    color: var(--headline-text-color);
+    font-size: 50px;
+    text-align: center;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    border-bottom: 5px solid var(--headline-text-color);
+}
+
+.form-control{
+    background-color: var(--body-bg-color);
+}
+
+.form-control:focus{
+    background-color: var(--body-bg-color);
+    color: var(--main-text-color);
+    outline: none;
+    border: 1px solid var(--main-text-color);
+    box-shadow: none;
+}
+
+.form-control::placeholder{
+    color: #808080;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-text{
+    color: var(--headline-text-color);
+}
+
+.contact-btn{
+    width: 100%;
+    border: none;
+    margin-top: 40px;
+    background-color: var(--headline-text-color);
+    color: var(--text-btn-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 50px;
+    transition: all 0.3s ease-out;
+}
+
+.contact-btn:hover{
+    background-color: #743d02;
+    box-shadow: 0px 2px 3px #743d02, 0px 4px 5px var(--headline-text-color) inset, 0px -4px 5px #743d02 inset;
+}
+
+/* footer section  */
+
+.footer-section{
+    background-color: var(--body-bg-color);
+    padding-top: 40px;
+}
+
+.footer-heading{
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-section p, a{
+    font-size: 13px;
+    color: var(--main-text-color);
+}
+
+.footer-lower-p{
+    color: var(--headline-text-color) !important;
+    font-size: 20px;
+    text-align: center !important;
+}
+
+.footer-lower-icon i{
+    padding-inline: 18px;
+    color: var(--headline-text-color);
+}
+
+.footer-section a:hover{
+    color: var(--focused-btn-color);
+}
+
+.footer-section p, a{
+    font-size: 16px;
+}
+
+.about-img{
+    position: relative;
+}
+
+.overlay-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    background-blend-mode: darken;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28219, 147, 75, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
